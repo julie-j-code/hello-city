@@ -1,13 +1,10 @@
 {% extends 'base.html.twig' %}
+{% block title 'Hello city !' %}
 
 {% block body %}
-    <h1>Hello fromm Quebec !</h1>
-    <p>It's currently {{ 'now'|date ('h:i A', 'Europe/Paris') }}</p>
-    <footer>
-        <p>
-            &copy; Copyright {{ 'now'|date ('Y') }}
-            &middot; <a href="#">About Us</a>
-        </p>
-    </footer>
+    <img class="rounded h-32" src="{{ asset('/img/logo.gif') }}" alt="">
+    <h1 class="my-5 text-3xl sm:text-5xl font-bold text-indigo-600">Hello from Quebec !</h1>
+    <p class="text-lg text-gray-800">It's currently {{ 'now'|date ('h:i A', 'Europe/Paris') }}</p>
+
 
 {% endblock %}

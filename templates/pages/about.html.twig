@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'About Us | '~ parent() %}
+
+{% block body %}
+    <img src="{{ asset('/img/teachersnet.png') }}" alt="">
+    <h1 class="my-5">Build with <span class="text-pink-500">&hearts;</span>  by LES TEACHERS DU NET</h1>
+    <p><a href="{{ path('app-home') }}">Revenir à la page d'accueil</a></p>
+
+{% endblock %}
